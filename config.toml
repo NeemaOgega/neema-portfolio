@@ -1,4 +1,4 @@
-baseURL = "https://neemaogega.netlify.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "My personal portfolio"
 theme = "hugo-theme-easybook"
