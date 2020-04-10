@@ -1,0 +1,84 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "My personal portfolio"
+theme = "hugo-theme-easybook"
+
+pygmentsCodefences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
+
+paginate = 3                            # 首页每页显示的文章数
+googleAnalytics = ""      # uid
+# 右上角菜单
+[[menu.main]]
+  name = "Home"
+  weight = 10
+  url = "/"
+[[menu.main]]
+  name = "Category"
+  weight = 20
+  url = "/post/"
+[[menu.main]]
+  name = "About"
+  weight = 30
+  url = "/about"
+#[[menu.main]]
+#  name = "ChaBug"
+#  weight = 40
+#  url = "http://www.chabug.org"
+
+# site info
+[params]
+  author = "Neema Ogega"
+  whoami = "A professional writer is an amateur who didn’t quit. — Richard Bach"
+  avatar = "images/avatar.jpg"
+  #keywords = ["Neema Ogega","信息安全","网络安全","红蓝攻防","渗透测试","bypass","waf","注入","黑客","chabug"]
+  description = "My description goes here"
+
+  [params.social]
+    GitHub = "https://github.com/NeemaOgega"
+    Email = "mailto:neemaogega@gmail.com"
+    linkedIn = "https://www.linkedin.com/in/neema-nyakara-85494a152/?originalSubdomain=ke"
+  # [params.utterances]       # https://utteranc.es/
+  #  owner = "NeemaOgega"          # Your GitHub ID
+  #  repo = "Y4er.com"       # The repo to store comments
+  [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
+    owner = ""              # Your GitHub ID
+    repo = ""               # The repo to store comments
+    clientId = ""           # Your client ID
+    clientSecret = ""       # Your client secret
+  [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+    owner = ""              # Your GitHub ID
+    repo = ""               # The repo to store comments
+    clientId = ""           # Your client ID
+    clientSecret = ""       # Your client secret
+  # Valine.
+  # You can get your appid and appkey from https://leancloud.cn
+  # more info please open https://valine.js.org
+  [params.valine]
+    enable = false
+    appId = 'appId'
+    appKey = 'appKey'
+    notify = false          # mail notifier , https://github.com/xCss/Valine/wiki
+    verify = false          # Verification code
+    avatar = 'mm' 
+    placeholder = '说点什么吧...'
+    visitor = false
+  
+  changyanAppid = ""        # Changyan app id             # 畅言
+  changyanAppkey = ""       # Changyan app key
+
+  livereUID = ""            # LiveRe UID                  # 来必力
+  
+  baiduPush = true          # baidu push                  # 百度
+  baiduAnalytics = ""       # Baidu Analytics
+  baiduVerification = ""    # Baidu Verification
+  googleVerification = ""   # Google Verification         # 谷歌
+
+  # Link custom CSS and JS assets
+  #   (relative to /static/css and /static/js respectively)
+  customCSS = []
+  customJS = []
+ 
+ #ignore certain files 
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
